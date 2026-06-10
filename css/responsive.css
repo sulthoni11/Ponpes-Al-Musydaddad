@@ -82,6 +82,18 @@
     grid-template-columns: 1fr;
     gap: 40px;
   }
+
+  .steps-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .steps-grid::before {
+    display: none;
+  }
+
+  .step-card p {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -148,6 +160,10 @@
     display: block;
   }
 
+  .dark-toggle {
+    margin-left: auto;
+  }
+
   .features,
   .about,
   .news,
@@ -177,11 +193,11 @@
   }
 
   .hero-content h1 {
-    font-size: 28px;
+    font-size: 30px;
   }
 
   .hero-content p {
-    font-size: 14px;
+    font-size: 15px;
     margin-bottom: 24px;
   }
 
@@ -301,11 +317,11 @@
   }
 
   .ppdb h2 {
-    font-size: 24px;
+    font-size: 26px;
   }
 
   .ppdb p {
-    font-size: 14px;
+    font-size: 15px;
   }
 
   .ppdb-stats {
@@ -323,6 +339,34 @@
 
   .download-item {
     padding: 14px 16px;
+  }
+
+  .steps {
+    padding: 50px 0;
+  }
+
+  .steps-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px 20px;
+  }
+
+  .steps-grid::before {
+    display: none;
+  }
+
+  .step-number {
+    width: 56px;
+    height: 56px;
+    font-size: 20px;
+  }
+
+  .step-card h3 {
+    font-size: 15px;
+  }
+
+  .step-card p {
+    font-size: 13px;
+    max-width: 100%;
   }
 
   .contact .container {
@@ -369,12 +413,17 @@
     grid-template-columns: 1fr;
   }
 
+  .steps-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
   .structure-grid {
     grid-template-columns: 1fr;
   }
 
   .hero-content h1 {
-    font-size: 24px;
+    font-size: 26px;
   }
 
   .hero {

@@ -24,10 +24,12 @@
   --footer-text: rgba(255,255,255,0.5);
   --shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
   --shadow-hover: 0 8px 25px rgba(0, 0, 0, 0.1);
-  --radius: 12px;
-  --radius-sm: 8px;
+  --radius: 16px;
+  --radius-sm: 10px;
+  --radius-lg: 24px;
   --transition: 0.3s ease;
   --font: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --font-heading: 'Segoe UI', system-ui, -apple-system, sans-serif;
 }
 
 body.dark-mode {
@@ -56,9 +58,31 @@ html {
 body {
   font-family: var(--font);
   color: var(--text);
-  line-height: 1.7;
+  line-height: 1.8;
   overflow-x: hidden;
   animation: pageIn 0.4s ease-out;
+  font-size: 17px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.hero,
+.program-detail,
+.news,
+.features,
+.about,
+.extracurricular,
+.gallery,
+.achievements,
+.downloads,
+.testimonials,
+.structure,
+.faq,
+.contact,
+.ppdb,
+.steps {
+  flex: auto;
 }
 
 @keyframes pageIn {
@@ -88,14 +112,15 @@ section[id] {
 /* Buttons */
 .btn {
   display: inline-block;
-  padding: 12px 32px;
+  padding: 14px 36px;
   border-radius: 50px;
-  font-weight: 600;
-  font-size: 15px;
+  font-weight: 700;
+  font-size: 16px;
   cursor: pointer;
   transition: var(--transition);
   border: none;
   text-align: center;
+  letter-spacing: 0.3px;
 }
 
 .btn-primary {
@@ -106,7 +131,7 @@ section[id] {
 .btn-primary:hover {
   background: var(--primary-dark);
   transform: translateY(-2px);
-  box-shadow: 0 4px 15px rgba(13, 107, 46, 0.4);
+  box-shadow: 0 6px 20px rgba(5, 150, 105, 0.35);
 }
 
 .btn-gold {
@@ -117,6 +142,7 @@ section[id] {
 .btn-gold:hover {
   background: #d97706;
   transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(245, 158, 11, 0.35);
 }
 
 .btn-outline {
@@ -128,19 +154,20 @@ section[id] {
 .btn-outline:hover {
   background: var(--white);
   color: var(--primary);
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.15);
 }
 
 /* Section title */
 .section-title {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 56px;
 }
 
 .section-title h2 {
-  font-size: 32px;
+  font-size: 34px;
   font-weight: 800;
   color: var(--dark);
-  margin-bottom: 8px;
+  margin-bottom: 12px;
   position: relative;
   display: inline-block;
 }
@@ -148,20 +175,21 @@ section[id] {
 .section-title h2::after {
   content: '';
   display: block;
-  width: 60px;
-  height: 3px;
+  width: 70px;
+  height: 4px;
   background: var(--gold);
-  margin: 12px auto 0;
+  margin: 14px auto 0;
   border-radius: 2px;
 }
 
 .section-title p {
   color: var(--text-light);
-  font-size: 16px;
-  margin-top: 12px;
+  font-size: 17px;
+  margin-top: 14px;
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+  line-height: 1.7;
 }
 
 /* Navbar */
@@ -203,6 +231,7 @@ section[id] {
   display: flex;
   align-items: center;
   gap: 12px;
+  flex-shrink: 0;
 }
 
 .nav-logo-icon {
@@ -237,6 +266,8 @@ section[id] {
   display: flex;
   align-items: center;
   gap: 5px;
+  flex: 1;
+  justify-content: flex-end;
 }
 
 .nav-links a {
@@ -359,7 +390,7 @@ section[id] {
   color: var(--white);
   font-size: 16px;
   transition: var(--transition);
-  margin-left: 8px;
+  margin-left: 12px;
 }
 
 .navbar.scrolled .dark-toggle {
