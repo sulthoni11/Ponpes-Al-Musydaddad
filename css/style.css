@@ -1,8 +1,0 @@
-/* CSS telah dipisah menjadi:
-   - base.css        (variables, reset, navbar, buttons, utilities)
-   - layout.css      (hero, sections, footer)
-   - components.css  (dark mode overrides, back-to-top, floating WA)
-   - responsive.css  (semua media queries)
-
-   Semua halaman HTML sudah langsung me-link ke 4 file di atas.
-   File ini tidak lagi digunakan. */

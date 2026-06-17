@@ -1,287 +1,1032 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pondok Modern Al-Musyaddad Klaten</title>
-  <meta name="description" content="Pondok Modern Al-Musyaddad adalah lembaga pendidikan yang maju, bermutu dan professional yang mengabdi kepada kepentingan agama dan bangsa.">
-  <link rel="stylesheet" href="css/base.css">
-  <link rel="stylesheet" href="css/layout.css">
-  <link rel="stylesheet" href="css/components.css">
-  <link rel="stylesheet" href="css/responsive.css">
-  <meta name="google-site-verification" content="HrwU1D8dZBkVatCtIU19UKPm2NX9cMirEI2U747yIIY" />
-</head>
-<body>
+<!doctype html>
+<html class="light" lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Pondok Modern Al Musyaddad - Beranda</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta
+      name="description"
+      content="Pondok Modern Al Musyaddad - Lembaga pendidikan Islam modern di Klaten dengan kurikulum SPM (Satuan Pendidikan Muadalah) terintegrasi. Mendidik generasi beriman, berilmu, dan berakhlak mulia."
+    />
+    <meta
+      name="keywords"
+      content="pondok modern, al musyaddad, pesantren, spm wustha, spm ulya, klaten"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Pondok Modern Al Musyaddad - Beranda" />
+    <meta
+      property="og:description"
+      content="Pondok Modern Al Musyaddad - Lembaga pendidikan Islam modern di Klaten dengan kurikulum SPM (Satuan Pendidikan Muadalah) terintegrasi. Mendidik generasi beriman, berilmu, dan berakhlak mulia."
+    />
+    <meta
+      property="og:image"
+      content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjPBTH-2P5mO7gqZGYQQDWcJDzjOKE3fnuXZEt12vwsdQHqRwaeDa1rd61Rde4oi8KTBT3x7kphWC-OQYCXxbpsgd03vAHPMZhw7M5Dv_Beibgsq24m6WWfaOiehp6WbdE2V5h08kcjYY-w/s400/Screenshot_20191201-163021_Instagram.jpg"
+    />
+    <meta property="og:url" content="https://pondokmodern.sch.id" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "secondary-fixed-dim": "#95d3ba",
+              "inverse-primary": "#73db9a",
+              background: "#f8f9ff",
+              "primary-fixed": "#8ff8b4",
+              "on-tertiary-fixed-variant": "#3e4943",
+              "on-secondary-fixed": "#002117",
+              "primary-fixed-dim": "#73db9a",
+              "tertiary-fixed": "#d9e6dd",
+              "on-tertiary-fixed": "#131e19",
+              error: "#ba1a1a",
+              "tertiary-container": "#d0ddd4",
+              surface: "#f8f9ff",
+              "on-surface-variant": "#3e4a40",
+              "outline-variant": "#bdcabe",
+              "surface-bright": "#f8f9ff",
+              "surface-container-highest": "#d3e4fe",
+              "surface-container-high": "#dce9ff",
+              secondary: "#2b6954",
+              "surface-tint": "#006d3e",
+              primary: "#006d3e",
+              "surface-container-lowest": "#ffffff",
+              "on-primary-fixed": "#00210f",
+              "inverse-surface": "#213145",
+              "on-background": "#0b1c30",
+              "inverse-on-surface": "#eaf1ff",
+              "on-primary-fixed-variant": "#00522d",
+              "secondary-container": "#adedd3",
+              "on-error": "#ffffff",
+              "surface-variant": "#d3e4fe",
+              "on-secondary-container": "#306d58",
+              "surface-container": "#e5eeff",
+              "on-secondary-fixed-variant": "#0b513d",
+              "on-primary": "#ffffff",
+              outline: "#6e7a70",
+              "on-primary-container": "#006d3e",
+              "on-tertiary-container": "#56625b",
+              "tertiary-fixed-dim": "#bdcac1",
+              "on-surface": "#0b1c30",
+              "secondary-fixed": "#b0f0d6",
+              "on-secondary": "#ffffff",
+              tertiary: "#55615a",
+              "on-tertiary": "#ffffff",
+              "primary-container": "#86efac",
+              "error-container": "#ffdad6",
+              "surface-container-low": "#eff4ff",
+              "surface-dim": "#cbdbf5",
+              "on-error-container": "#93000a",
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+            spacing: {
+              base: "4px",
+              "section-padding": "80px",
+              "stack-lg": "32px",
+              "margin-desktop": "40px",
+              gutter: "24px",
+              "stack-sm": "8px",
+              "stack-md": "16px",
+              "container-max": "1280px",
+              "margin-mobile": "16px",
+            },
+            fontSize: {
+              "label-md": [
+                "14px",
+                {
+                  lineHeight: "20px",
+                  letterSpacing: "0.01em",
+                  fontWeight: "500",
+                },
+              ],
+              "label-sm": ["12px", { lineHeight: "16px", fontWeight: "600" }],
+              "body-md": ["16px", { lineHeight: "24px", fontWeight: "400" }],
+              "headline-md-mobile": [
+                "24px",
+                { lineHeight: "32px", fontWeight: "600" },
+              ],
+              "body-lg": ["18px", { lineHeight: "28px", fontWeight: "400" }],
+              "display-lg": [
+                "48px",
+                {
+                  lineHeight: "56px",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "700",
+                },
+              ],
+              "headline-md": [
+                "30px",
+                {
+                  lineHeight: "38px",
+                  letterSpacing: "-0.01em",
+                  fontWeight: "600",
+                },
+              ],
+              "title-lg": ["20px", { lineHeight: "28px", fontWeight: "600" }],
+              "display-lg-mobile": [
+                "36px",
+                {
+                  lineHeight: "44px",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "700",
+                },
+              ],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings:
+          "FILL" 0,
+          "wght" 400,
+          "GRAD" 0,
+          "opsz" 24;
+      }
+      body {
+        font-family: "Inter", sans-serif;
+      }
+      .glass-card {
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(226, 232, 240, 0.5);
+      }
+      .scroll-reveal {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all 0.6s ease-out;
+      }
+      .scroll-reveal.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      main p {
+        text-align: justify;
+      }
+      @media (max-width: 767px) {
+        .px-margin-desktop {
+          padding-left: 16px !important;
+          padding-right: 16px !important;
+        }
+        .py-section-padding {
+          padding-top: 48px !important;
+          padding-bottom: 48px !important;
+        }
+        .h-\[819px\] {
+          min-height: 80vh !important;
+          height: auto !important;
+        }
+        .text-display-lg {
+          font-size: 36px !important;
+          line-height: 44px !important;
+        }
+        .gap-section-padding {
+          gap: 48px !important;
+        }
+        .grid-cols-3 {
+          grid-template-columns: 1fr !important;
+        }
+        .grid-cols-4 {
+          grid-template-columns: 1fr 1fr !important;
+        }
+        a.py-4,
+        button.py-4 {
+          padding-top: 10px !important;
+          padding-bottom: 10px !important;
+        }
+        a.px-8,
+        button.px-8 {
+          padding-left: 20px !important;
+          padding-right: 20px !important;
+        }
+        a.px-10,
+        button.px-10 {
+          padding-left: 24px !important;
+          padding-right: 24px !important;
+        }
+        a.px-6,
+        button.px-6 {
+          padding-left: 16px !important;
+          padding-right: 16px !important;
+        }
+        a.py-2,
+        button.py-2 {
+          padding-top: 4px !important;
+          padding-bottom: 4px !important;
+        }
+        a.py-2\.5,
+        button.py-2\.5 {
+          padding-top: 6px !important;
+          padding-bottom: 6px !important;
+        }
+        .text-headline-md {
+          font-size: 24px !important;
+          line-height: 32px !important;
+        }
+        .p-8 {
+          padding: 16px !important;
+        }
+        #mobileMenu a:not(.bg-primary) {
+          padding-top: 6px !important;
+          padding-bottom: 6px !important;
+          font-size: 14px !important;
+        }
+        #mobileMenu .space-y-3 {
+          gap: 4px !important;
+        }
+        #mobileMenu a.bg-primary {
+          padding-top: 8px !important;
+          padding-bottom: 8px !important;
+          font-size: 14px !important;
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-surface text-on-surface">
+    <header
+      class="bg-surface border-b border-outline-variant shadow-sm docked full-width top-0 sticky z-50"
+    >
+      <nav
+        class="max-w-container-max mx-auto px-margin-desktop flex justify-between items-center h-20"
+      >
+        <div class="flex items-center gap-stack-md">
+          <img
+            src="logo.png"
+            alt="Pondok Modern Al Musyaddad"
+            class="h-10 md:h-12 w-auto"
+          />
+          <span
+            class="text-title-lg font-bold text-secondary ml-3 hidden sm:inline"
+            >Pondok Modern <span class="text-primary">Al Musyaddad</span></span
+          >
+        </div>
+        <div class="hidden md:flex items-center space-x-8">
+          <a
+            href="index.html"
+            class="text-primary font-bold border-b-2 border-primary py-2 text-label-md"
+            >Beranda</a
+          >
+          <a
+            href="profil.html"
+            class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-200 text-label-md"
+            >Profil</a
+          >
+          <a
+            href="program.html"
+            class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-200 text-label-md"
+            >Program</a
+          >
+          <a
+            href="kurikulum.html"
+            class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-200 text-label-md"
+            >Kurikulum</a
+          >
+          <a
+            href="sarana.html"
+            class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-200 text-label-md"
+            >Sarana</a
+          >
+          <a
+            href="download.html"
+            class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-200 text-label-md"
+            >Download</a
+          >
+        </div>
+        <div class="flex items-center gap-stack-md">
+          <a
+            href="ppdb.html"
+            class="bg-primary text-on-primary px-6 py-2.5 rounded-lg font-bold text-label-md hover:opacity-90 active:scale-95 transition-all"
+            >Pendaftaran</a
+          >
+          <button
+            id="mobileMenuBtn"
+            class="md:hidden material-symbols-outlined text-on-surface-variant text-3xl"
+          >
+            menu
+          </button>
+        </div>
+      </nav>
+      <div
+        id="mobileMenu"
+        class="hidden md:hidden bg-surface border-b border-outline-variant"
+      >
+        <div class="px-margin-desktop py-4 space-y-3">
+          <a href="index.html" class="block text-primary font-bold py-2"
+            >Beranda</a
+          >
+          <a href="profil.html" class="block text-on-surface-variant py-2"
+            >Profil</a
+          >
+          <a href="program.html" class="block text-on-surface-variant py-2"
+            >Program</a
+          >
+          <a href="kurikulum.html" class="block text-on-surface-variant py-2"
+            >Kurikulum</a
+          >
+          <a href="sarana.html" class="block text-on-surface-variant py-2"
+            >Sarana</a
+          >
+          <a href="download.html" class="block text-on-surface-variant py-2"
+            >Download</a
+          >
+          <a
+            href="ppdb.html"
+            class="block bg-primary text-on-primary text-center py-3 rounded-lg font-bold"
+            >Pendaftaran</a
+          >
+        </div>
+      </div>
+    </header>
 
-  <!-- Navbar -->
-  <nav class="navbar" id="navbar">
-    <div class="container">
-      <a href="index.html" class="nav-logo">
-        <div class="nav-logo-icon">AM</div>
-        <span>Al-Musyaddad<small>Klaten</small></span>
+    <main>
+      <section
+        class="relative h-[819px] min-h-[600px] flex items-center overflow-hidden"
+      >
+        <div class="absolute inset-0 z-0">
+          <img
+            class="w-full h-full object-cover opacity-60"
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjPBTH-2P5mO7gqZGYQQDWcJDzjOKE3fnuXZEt12vwsdQHqRwaeDa1rd61Rde4oi8KTBT3x7kphWC-OQYCXxbpsgd03vAHPMZhw7M5Dv_Beibgsq24m6WWfaOiehp6WbdE2V5h08kcjYY-w/s400/Screenshot_20191201-163021_Instagram.jpg"
+            alt="Pondok Modern Campus"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-r from-on-surface/60 to-transparent"
+          ></div>
+        </div>
+        <div
+          class="relative z-10 max-w-container-max mx-auto px-margin-desktop w-full text-white"
+        >
+          <div class="max-w-2xl">
+            <span
+              class="inline-block px-4 py-1.5 bg-primary-container text-on-primary-container rounded-full text-label-sm mb-stack-md"
+              >Tahun Ajaran 2025/2026</span
+            >
+            <h1 class="text-display-lg mb-stack-md leading-tight">
+              Selamat Datang di
+              <span class="text-primary-fixed">Pondok Modern Al Musyaddad</span>
+            </h1>
+            <p class="text-body-lg mb-stack-lg opacity-90">
+              Pondok Modern Al Musyaddad mendidik Generasi Beriman, Berilmu, dan
+              Berakhlak Mulia dengan Kurikulum SPM (Satuan Pendidikan Muadalah)
+              yang Terintegrasi.
+            </p>
+            <div class="flex flex-wrap gap-stack-md">
+              <a
+                href="ppdb.html"
+                class="bg-secondary text-white px-8 py-4 rounded-xl font-bold flex items-center gap-2 hover:bg-secondary/90 transition-all"
+              >
+                Daftar Sekarang
+                <span class="material-symbols-outlined">arrow_forward</span>
+              </a>
+              <a
+                href="program.html"
+                class="bg-white/10 backdrop-blur-md border border-white/30 text-white px-8 py-4 rounded-xl font-bold hover:bg-white/20 transition-all"
+              >
+                Lihat Program
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-section-padding bg-surface">
+        <div class="max-w-container-max mx-auto px-margin-desktop">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            <div class="relative">
+              <div
+                class="absolute -top-4 -left-4 w-24 h-24 bg-primary-container rounded-lg -z-10 opacity-50"
+              ></div>
+              <img
+                class="rounded-2xl shadow-xl w-full aspect-[4/5] object-cover"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBj-ELF2tlYJswK4qaDkK4YgKI1AMZUU_bt2c6_u1BeRSapc0Ia8PNSSxH4FO9XCw3YNWhFX6fHSq-V23NpykedXZPMtiJD0uO0kPBcb7RAC1oC206YP38kJ_pm5JXtzTfCC67v6fuoXy6lQ1H2JybIq9tQFn3bi8stMTtWHAAg1SRbnkSTGFQmy3TsX0SE8VybmNnqz_nI37qM-OdEljs5LCkfKaOmoRxyvWBkyA3xEcVLD9vspDsoVQxF1tcBiq-r-SRBeH7tt6c"
+                alt="Pimpinan Pondok"
+              />
+              <div class="absolute bottom-6 right-6 glass-card p-6 rounded-xl">
+                <p class="text-title-lg text-secondary">Samadi, S.Ag., M.SI.</p>
+                <p class="text-label-md text-on-surface-variant">
+                  Pimpinan Pondok Modern Al Musyaddad
+                </p>
+              </div>
+            </div>
+            <div>
+              <h2 class="text-headline-md text-primary mb-stack-md">
+                Sejarah Singkat Pondok Modern Al Musyaddad
+              </h2>
+              <div
+                class="space-y-stack-md text-on-surface-variant text-body-md leading-relaxed"
+              >
+                <p>
+                  Perjalanan pendirian Pondok Modern Al Musyaddad ini bermula
+                  pada tahun 2012, guru kami tercinta, al-Habib Nuh bin Muhammad
+                  Al-Haddad memberikan arahan kepada Kyai kami Al Ustadz Samadi,
+                  S.Ag., M.SI. untuk mendirikan pondok pesantren.
+                </p>
+                <p>
+                  Pada tanggal 11 Agustus 2014, bersama masyarakat sekitar,
+                  dibentuklah Yayasan Anwar Musyaddad Cholil. Pembangunan fisik
+                  gedung dimulai pada 16 Januari 2016 dari dana pribadi.
+                  Puncaknya, pada 23 September 2018, pesantren resmi mendapatkan
+                  SK sebagai pondok pesantren.
+                </p>
+              </div>
+              <div
+                class="mt-stack-lg flex items-center gap-stack-md p-4 bg-surface-container-low rounded-lg"
+              >
+                <span class="material-symbols-outlined text-primary text-4xl"
+                  >format_quote</span
+                >
+                <p class="italic text-on-surface-variant">
+                  "Mendidik Generasi Beriman, Berilmu, dan Berakhlak Mulia"
+                </p>
+              </div>
+              <a
+                href="profil.html"
+                class="mt-stack-md inline-flex items-center gap-2 text-primary font-bold hover:underline"
+              >
+                Selengkapnya
+                <span class="material-symbols-outlined text-sm"
+                  >arrow_forward</span
+                >
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-12 bg-secondary text-on-secondary">
+        <div class="max-w-container-max mx-auto px-margin-desktop">
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div class="space-y-2">
+              <p class="text-display-lg text-primary-fixed font-bold">94</p>
+              <p class="text-label-md uppercase tracking-wider opacity-80">
+                Santri Aktif
+              </p>
+            </div>
+            <div class="space-y-2">
+              <p class="text-display-lg text-primary-fixed font-bold">34</p>
+              <p class="text-label-md uppercase tracking-wider opacity-80">
+                Ustadz &amp; Ustadzah
+              </p>
+            </div>
+            <div class="space-y-2">
+              <p class="text-display-lg text-primary-fixed font-bold">2018</p>
+              <p class="text-label-md uppercase tracking-wider opacity-80">
+                Tahun Berdiri
+              </p>
+            </div>
+            <div class="space-y-2">
+              <p class="text-display-lg text-primary-fixed font-bold">8</p>
+              <p class="text-label-md uppercase tracking-wider opacity-80">
+                Rombel
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-section-padding bg-surface-container-low">
+        <div
+          class="max-w-container-max mx-auto px-margin-desktop text-center mb-16"
+        >
+          <h2 class="text-headline-md text-primary mb-4">Program Unggulan</h2>
+          <p class="text-body-md text-on-surface-variant max-w-2xl mx-auto">
+            Kurikulum komprehensif berbasis SPM (Satuan Pendidikan Muadalah)
+            yang dirancang untuk mencetak generasi unggul.
+          </p>
+        </div>
+        <div
+          class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-3 gap-gutter"
+        >
+          <div
+            class="bg-white rounded-2xl p-8 border border-outline-variant hover:border-primary transition-all group"
+          >
+            <div
+              class="w-16 h-16 bg-primary-container text-on-primary-container rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform"
+            >
+              <span class="material-symbols-outlined text-4xl">school</span>
+            </div>
+            <h3 class="text-title-lg text-on-surface mb-stack-md">SPM</h3>
+            <p class="text-body-md text-on-surface-variant mb-6">
+              Satuan Pendidikan Muadalah. Lulusan SD 6 tahun, lulusan SMP 4
+              tahun. Kurikulum terpadu sistem muallimin.
+            </p>
+            <a
+              href="program.html"
+              class="text-primary font-bold inline-flex items-center gap-2 group-hover:underline"
+            >
+              Selengkapnya
+              <span class="material-symbols-outlined text-sm">open_in_new</span>
+            </a>
+          </div>
+          <div
+            class="bg-white rounded-2xl p-8 border border-outline-variant hover:border-primary transition-all group"
+          >
+            <div
+              class="w-16 h-16 bg-primary-container text-on-primary-container rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform"
+            >
+              <span class="material-symbols-outlined text-4xl">menu_book</span>
+            </div>
+            <h3 class="text-title-lg text-on-surface mb-stack-md">
+              Tahfidz Al-Qur'an
+            </h3>
+            <p class="text-body-md text-on-surface-variant mb-6">
+              Program menghafal Al-Qur'an 30 juz dengan metode talaqqi dan
+              mutqin (kuat) bersama guru ahli.
+            </p>
+            <a
+              href="program.html"
+              class="text-primary font-bold inline-flex items-center gap-2 group-hover:underline"
+            >
+              Selengkapnya
+              <span class="material-symbols-outlined text-sm">open_in_new</span>
+            </a>
+          </div>
+          <div
+            class="bg-white rounded-2xl p-8 border border-outline-variant hover:border-primary transition-all group"
+          >
+            <div
+              class="w-16 h-16 bg-primary-container text-on-primary-container rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform"
+            >
+              <span class="material-symbols-outlined text-4xl"
+                >history_edu</span
+              >
+            </div>
+            <h3 class="text-title-lg text-on-surface mb-stack-md">
+              Kitab Kuning
+            </h3>
+            <p class="text-body-md text-on-surface-variant mb-6">
+              Kajian kitab klasik Islam: Nahwu, Sharaf, Fiqih, Tauhid, Tafsir,
+              Hadits, dan ilmu alat lainnya.
+            </p>
+            <a
+              href="program.html"
+              class="text-primary font-bold inline-flex items-center gap-2 group-hover:underline"
+            >
+              Selengkapnya
+              <span class="material-symbols-outlined text-sm">open_in_new</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-section-padding">
+        <div
+          class="max-w-container-max mx-auto px-margin-desktop flex flex-col md:flex-row md:justify-between md:items-end mb-6 md:mb-12 gap-3"
+        >
+          <div>
+            <h2 class="text-headline-md text-primary mb-2">Profil Sekolah</h2>
+            <p class="text-body-md text-on-surface-variant">
+              Informasi lengkap SPM Wustha dan SPM Ulya Pondok Modern Al
+              Musyaddad.
+            </p>
+          </div>
+          <a
+            href="profil.html"
+            class="self-start md:self-auto text-primary border border-primary px-3 py-1 rounded-lg font-bold text-xs hover:bg-primary-container transition-colors"
+            >Lihat Semua</a
+          >
+        </div>
+        <div
+          class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-2 gap-gutter"
+        >
+          <div
+            class="bg-surface-container-low rounded-2xl p-8 border border-outline-variant"
+          >
+            <div class="flex items-center gap-4 mb-6">
+              <div
+                class="w-14 h-14 bg-primary-container rounded-xl flex items-center justify-center"
+              >
+                <span
+                  class="material-symbols-outlined text-3xl text-on-primary-container"
+                  >school</span
+                >
+              </div>
+              <div>
+                <h3 class="text-title-lg text-on-surface">SPM Wustha</h3>
+                <p class="text-label-md text-secondary">Setingkat SMP</p>
+              </div>
+            </div>
+            <div class="space-y-3 text-body-md">
+              <div
+                class="flex justify-between py-2 border-b border-outline-variant"
+              >
+                <span class="text-on-surface-variant">NPSN</span
+                ><span class="font-semibold">70051658</span>
+              </div>
+              <div
+                class="flex justify-between py-2 border-b border-outline-variant"
+              >
+                <span class="text-on-surface-variant">NSP</span
+                ><span class="font-semibold">222233100001</span>
+              </div>
+              <div
+                class="flex justify-between py-2 border-b border-outline-variant"
+              >
+                <span class="text-on-surface-variant">SK Izin</span
+                ><span class="font-semibold">5040 Tahun 2024</span>
+              </div>
+              <div class="flex justify-between py-2">
+                <span class="text-on-surface-variant">Jumlah Siswa</span
+                ><span class="font-semibold">97</span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-surface-container-low rounded-2xl p-8 border border-outline-variant"
+          >
+            <div class="flex items-center gap-4 mb-6">
+              <div
+                class="w-14 h-14 bg-primary-container rounded-xl flex items-center justify-center"
+              >
+                <span
+                  class="material-symbols-outlined text-3xl text-on-primary-container"
+                  >cast_for_education</span
+                >
+              </div>
+              <div>
+                <h3 class="text-title-lg text-on-surface">SPM Ulya</h3>
+                <p class="text-label-md text-secondary">Setingkat SMA</p>
+              </div>
+            </div>
+            <div class="space-y-3 text-body-md">
+              <div
+                class="flex justify-between py-2 border-b border-outline-variant"
+              >
+                <span class="text-on-surface-variant">NPSN</span
+                ><span class="font-semibold">70051729</span>
+              </div>
+              <div
+                class="flex justify-between py-2 border-b border-outline-variant"
+              >
+                <span class="text-on-surface-variant">NSP</span
+                ><span class="font-semibold">232233100002</span>
+              </div>
+              <div
+                class="flex justify-between py-2 border-b border-outline-variant"
+              >
+                <span class="text-on-surface-variant">SK Izin</span
+                ><span class="font-semibold">5043 Tahun 2024</span>
+              </div>
+              <div class="flex justify-between py-2">
+                <span class="text-on-surface-variant">Akreditasi</span
+                ><span class="font-semibold">Belum Terakreditasi</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="py-section-padding bg-surface-container-low overflow-hidden"
+      >
+        <div class="max-w-container-max mx-auto px-margin-desktop">
+          <div class="text-center mb-12">
+            <span
+              class="inline-block px-4 py-1 bg-primary-container text-on-primary-container rounded-full text-label-sm mb-4"
+              >Galeri Kegiatan</span
+            >
+            <h2 class="text-headline-md text-primary mb-3">Kegiatan Santri</h2>
+            <p class="text-body-md text-on-surface-variant max-w-2xl mx-auto">
+              Berbagai aktivitas santri Pondok Modern Al Musyaddad dalam
+              mengembangkan bakat, minat, dan keterampilan.
+            </p>
+          </div>
+          <div class="relative" id="gallerySlider">
+            <div
+              class="flex gap-4 overflow-x-auto snap-x snap-mandatory scroll-smooth pb-4 -mx-4 px-4"
+              id="galleryTrack"
+              style="scrollbar-width: none"
+            >
+              <div
+                class="snap-start shrink-0 w-[85vw] md:w-[400px] rounded-xl overflow-hidden group"
+              >
+                <div class="aspect-[4/3] overflow-hidden">
+                  <img
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    src="downloads/PRAMUKA PUTRA.jpeg"
+                    alt="Pramuka"
+                  />
+                </div>
+                <div class="p-4 bg-surface-container-lowest">
+                  <h4 class="text-title-lg text-on-surface">Pramuka</h4>
+                  <p class="text-body-md text-on-surface-variant">
+                    Kedisiplinan dan kepemimpinan melalui kegiatan kepramukaan.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="snap-start shrink-0 w-[85vw] md:w-[400px] rounded-xl overflow-hidden group"
+              >
+                <div class="aspect-[4/3] overflow-hidden">
+                  <img
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    src="downloads/HADROH.jpeg"
+                    alt="Hadroh"
+                  />
+                </div>
+                <div class="p-4 bg-surface-container-lowest">
+                  <h4 class="text-title-lg text-on-surface">Hadroh</h4>
+                  <p class="text-body-md text-on-surface-variant">
+                    Seni Islami sebagai sarana dakwah dan ekspresi kreatif.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="snap-start shrink-0 w-[85vw] md:w-[400px] rounded-xl overflow-hidden group"
+              >
+                <div class="aspect-[4/3] overflow-hidden">
+                  <img
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    src="downloads/DRUM BAND.jpeg"
+                    alt="Drum Band"
+                  />
+                </div>
+                <div class="p-4 bg-surface-container-lowest">
+                  <h4 class="text-title-lg text-on-surface">Drum Band</h4>
+                  <p class="text-body-md text-on-surface-variant">
+                    Kreativitas dan kekompakan tim melalui seni musik
+                    baris-berbaris.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="snap-start shrink-0 w-[85vw] md:w-[400px] rounded-xl overflow-hidden group"
+              >
+                <div class="aspect-[4/3] overflow-hidden">
+                  <img
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    src="downloads/SEPAK BOLA.jpeg"
+                    alt="Sepak Bola"
+                  />
+                </div>
+                <div class="p-4 bg-surface-container-lowest">
+                  <h4 class="text-title-lg text-on-surface">Sepak Bola</h4>
+                  <p class="text-body-md text-on-surface-variant">
+                    Sportivitas dan kebugaran jasmani melalui olahraga sepak
+                    bola.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="snap-start shrink-0 w-[85vw] md:w-[400px] rounded-xl overflow-hidden group"
+              >
+                <div class="aspect-[4/3] overflow-hidden">
+                  <img
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    src="downloads/KOMPUTER.jpeg"
+                    alt="Lab Komputer"
+                  />
+                </div>
+                <div class="p-4 bg-surface-container-lowest">
+                  <h4 class="text-title-lg text-on-surface">Komputer</h4>
+                  <p class="text-body-md text-on-surface-variant">
+                    Pembekalan keterampilan digital untuk bekal di era modern.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="flex justify-center gap-2 mt-6" id="galleryDots"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-section-padding bg-primary relative overflow-hidden">
+        <div
+          class="max-w-container-max mx-auto px-margin-desktop relative z-10 text-center"
+        >
+          <h2 class="text-display-lg text-white mb-stack-md">
+            Mulai Perjalanan Pendidikan Ananda
+          </h2>
+          <p class="text-body-lg text-white/90 max-w-2xl mx-auto mb-stack-lg">
+            Pendaftaran Santri Baru Tahun Ajaran 2025/2026 telah dibuka. Kuota
+            terbatas untuk setiap jenjang pendidikan.
+          </p>
+          <div class="flex flex-col sm:flex-row justify-center gap-stack-md">
+            <a
+              href="ppdb.html"
+              class="bg-secondary text-white px-10 py-4 rounded-xl font-bold hover:shadow-xl transition-all shadow-lg"
+              >Daftar Sekarang</a
+            >
+            <a
+              href="download.html"
+              class="bg-white text-primary px-10 py-4 rounded-xl font-bold hover:bg-surface-container-lowest transition-all"
+              >Download Brosur</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-inverse-surface text-on-primary">
+      <div
+        class="max-w-container-max mx-auto px-margin-desktop py-section-padding grid grid-cols-1 md:grid-cols-4 gap-gutter"
+      >
+        <div class="space-y-stack-md">
+          <span class="text-headline-md font-bold text-surface-bright"
+            >Pondok Modern
+            <span class="text-primary-fixed-dim">Al Musyaddad</span></span
+          >
+          <p class="text-body-md opacity-70">
+            Lembaga pendidikan Islam modern yang mengedepankan kualitas akademik
+            dan kesalehan spiritual.
+          </p>
+          <div class="flex gap-4">
+            <span
+              class="material-symbols-outlined cursor-pointer hover:text-primary-fixed-dim"
+              >public</span
+            >
+            <span
+              class="material-symbols-outlined cursor-pointer hover:text-primary-fixed-dim"
+              >photo_camera</span
+            >
+            <span
+              class="material-symbols-outlined cursor-pointer hover:text-primary-fixed-dim"
+              >play_circle</span
+            >
+          </div>
+        </div>
+        <div>
+          <h4 class="text-title-lg mb-6">Tautan Cepat</h4>
+          <ul class="space-y-3 text-body-md">
+            <li>
+              <a
+                href="index.html"
+                class="opacity-70 hover:text-primary-fixed-dim transition-opacity"
+                >Beranda</a
+              >
+            </li>
+            <li>
+              <a
+                href="profil.html"
+                class="opacity-70 hover:text-primary-fixed-dim transition-opacity"
+                >Profil Pondok</a
+              >
+            </li>
+            <li>
+              <a
+                href="program.html"
+                class="opacity-70 hover:text-primary-fixed-dim transition-opacity"
+                >Program Unggulan</a
+              >
+            </li>
+            <li>
+              <a
+                href="kurikulum.html"
+                class="opacity-70 hover:text-primary-fixed-dim transition-opacity"
+                >Kurikulum</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-title-lg mb-6">Informasi</h4>
+          <ul class="space-y-3 text-body-md">
+            <li>
+              <a
+                href="ppdb.html"
+                class="opacity-70 hover:text-primary-fixed-dim transition-opacity"
+                >Syarat Pendaftaran</a
+              >
+            </li>
+            <li>
+              <a
+                href="download.html"
+                class="opacity-70 hover:text-primary-fixed-dim transition-opacity"
+                >Download Brosur</a
+              >
+            </li>
+            <li>
+              <a
+                href="download.html#izin"
+                class="opacity-70 hover:text-primary-fixed-dim transition-opacity"
+                >Izin SK Operasional</a
+              >
+            </li>
+            <li>
+              <a
+                href="sarana.html"
+                class="opacity-70 hover:text-primary-fixed-dim transition-opacity"
+                >Sarana Prasarana</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-title-lg mb-6">Hubungi Kami</h4>
+          <div class="space-y-4 text-body-md opacity-70">
+            <div class="flex gap-3">
+              <span class="material-symbols-outlined text-primary-fixed-dim"
+                >location_on</span
+              >
+              <span
+                >Tlobong RT.04/09, Sidoharjo, Polanharjo, Klaten, Jawa Tengah
+                57474</span
+              >
+            </div>
+            <div class="flex gap-3">
+              <span class="material-symbols-outlined text-primary-fixed-dim"
+                >call</span
+              >
+              <span>+62 858 7642 7449</span>
+            </div>
+            <div class="flex gap-3">
+              <span class="material-symbols-outlined text-primary-fixed-dim"
+                >mail</span
+              >
+              <span>info@pondokmodern.sch.id</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="max-w-container-max mx-auto px-margin-desktop py-6 border-t border-white/10 text-center opacity-60 text-label-sm"
+      >
+        &copy; 2026 Pondok Modern Al Musyaddad. All Rights Reserved.
+      </div>
+    </footer>
+
+    <div class="fixed bottom-6 right-6 z-50">
+      <a
+        href="https://wa.me/6282324758123"
+        target="_blank"
+        rel="noopener"
+        class="bg-[#25D366] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform"
+        aria-label="WhatsApp"
+      >
+        <span class="material-symbols-outlined text-3xl">chat</span>
       </a>
-      <div class="nav-links" id="navLinks">
-        <a href="index.html" class="active">Beranda</a>
-        <div class="nav-dropdown">
-          <a href="profil/index.html">Profil ▾</a>
-          <div class="nav-dropdown-content">
-            <a href="profil/prestasi.html">Prestasi</a>
-            <a href="profil/struktur.html">Struktur</a>
-            <a href="profil/testimoni.html">Testimoni</a>
-          </div>
-        </div>
-        <div class="nav-dropdown">
-          <a href="program/index.html">Program ▾</a>
-          <div class="nav-dropdown-content">
-            <a href="program/kmi.html">KMI</a>
-            <a href="program/takhassus.html">Takhassus</a>
-            <a href="program/kitab-kuning.html">Kitab Kuning</a>
-            <a href="program/tahfidz.html">Tahfidz</a>
-            <a href="program/ekstrakurikuler.html">Ekstrakurikuler</a>
-          </div>
-        </div>
-        <a href="index.html#ppdb">PPDB</a>
-        <a href="info/berita.html">Berita</a>
-        <a href="info/galeri.html">Galeri</a>
-        <div class="nav-dropdown">
-          <a href="info/kontak.html">Lainnya ▾</a>
-          <div class="nav-dropdown-content">
-            <a href="info/download.html">Download</a>
-            <a href="info/faq.html">FAQ</a>
-            <a href="info/kontak.html">Kontak</a>
-          </div>
-        </div>
-      </div>
-      <button class="dark-toggle" id="darkToggle" aria-label="Toggle dark mode">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-      </button>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
     </div>
-  </nav>
 
-
-  <!-- Hero -->
-  <section class="hero" id="home">
-    <div class="container">
-      <div class="hero-content">
-        <h1>Penerimaan <span>Santri Baru</span> 2025/2026</h1>
-        <p>Pondok Modern Al-Musyaddad Klaten membuka pendaftaran untuk putra Anda. Daftarkan sekarang dan jadilah bagian dari generasi beriman, berilmu, dan berakhlak mulia.</p>
-        <div class="hero-buttons">
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfGi00vwYBpLE3AOc83rv38HUFGFZM-XABlSLgmJQjgzfg-RQ/viewform" target="_blank" rel="noopener" class="btn btn-gold">Daftar Sekarang</a>
-          <a href="profil/index.html" class="btn btn-outline">Informasi Lengkap</a>
-        </div>
-      </div>
-      <div class="hero-visual">
-        <div class="hero-card">
-          <div class="hero-card-stats">
-            <div class="hero-stat">
-              <span class="hero-stat-number">200+</span>
-              <span class="hero-stat-label">Santri Aktif</span>
-            </div>
-            <div class="hero-stat">
-              <span class="hero-stat-number">30+</span>
-              <span class="hero-stat-label">Tenaga Pengajar</span>
-            </div>
-            <div class="hero-stat">
-              <span class="hero-stat-number">15+</span>
-              <span class="hero-stat-label">Tahun Berdiri</span>
-            </div>
-            <div class="hero-stat">
-              <span class="hero-stat-number">6</span>
-              <span class="hero-stat-label">Program Unggulan</span>
-            </div>
-          </div>
-          <div class="hero-card-quote">
-            "Mendidik Generasi Beriman, Berilmu, dan Berakhlak Mulia"
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Program Unggulan -->
-  <section class="features" id="program">
-    <div class="container">
-      <div class="section-title">
-        <h2>Program Unggulan</h2>
-        <p>Empat program utama yang menjadi ciri khas pendidikan di Pondok Modern Al-Musyaddad</p>
-      </div>
-      <div class="features-grid">
-        <a href="program/kmi.html" class="feature-card" id="kmi">
-          <div class="feature-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1.1 2.7 3 6 3s6-1.9 6-3v-5"/></svg>
-          </div>
-          <h3>KMI</h3>
-          <p>Kulliyatul Mu'allimin Al-Islamiyah — jenjang pendidikan Islam tingkat menengah setara SMP/MTs dan SMA/MA.</p>
-          <span class="feature-link">Selengkapnya →</span>
-        </a>
-        <a href="program/takhassus.html" class="feature-card" id="takhassus">
-          <div class="feature-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
-          </div>
-          <h3>Takhassus</h3>
-          <p>Program pengkhususan pendalaman ilmu agama dan bahasa Arab bagi santri yang ingin memperdalam kompetensi.</p>
-          <span class="feature-link">Selengkapnya →</span>
-        </a>
-        <a href="program/kitab-kuning.html" class="feature-card" id="kitab-kuning">
-          <div class="feature-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
-          </div>
-          <h3>Kitab Kuning</h3>
-          <p>Program pembelajaran kitab kuning klasik sebagai fondasi pemahaman ilmu agama Islam yang autentik.</p>
-          <span class="feature-link">Selengkapnya →</span>
-        </a>
-        <a href="program/tahfidz.html" class="feature-card" id="tahfidz">
-          <div class="feature-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
-          </div>
-          <h3>Tahfidz</h3>
-          <p>Program menghafal Al-Quran 30 juz dengan bimbingan intensif dari para huffadz yang kompeten.</p>
-          <span class="feature-link">Selengkapnya →</span>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- About / Profil -->
-  <section class="about" id="about">
-    <div class="container">
-      <div class="about-image">
-        <div class="about-image-placeholder">
-          <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600&q=80" alt="Kegiatan Belajar Mengajar di Al-Musyaddad" loading="lazy">
-        </div>
-        <div class="about-image-badge">Terakreditasi A</div>
-      </div>
-      <div class="about-content">
-        <h2>Profil <span>Pondok Modern Al-Musyaddad</span></h2>
-        <p>Pondok Modern Al-Musyaddad Klaten berlokasi di Tlobong RT.04 / RW.09, Sidoharjo, Polanharjo, Klaten, Jawa Tengah. Lembaga pendidikan ini menggabungkan kurikulum nasional dan kurikulum khas pondok modern dengan pendekatan integratif.</p>
-        <p>Dengan tagline <strong>"Maju, Bermutu, Profesional"</strong>, Al-Musyaddad berkomitmen mencetak generasi yang unggul dalam ilmu agama, ilmu pengetahuan, dan akhlak mulia.</p>
-        <ul class="about-list">
-          <li>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-            Kurikulum Terintegrasi KMI & Nasional
-          </li>
-          <li>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-            Tenaga Pengajar Profesional & Berpengalaman
-          </li>
-          <li>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-            Fasilitas Belajar yang Representatif
-          </li>
-          <li>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-            Pembentukan Karakter Islami & Kemandirian
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- PPDB -->
-  <section class="ppdb" id="ppdb">
-    <div class="container">
-      <h2>Penerimaan Santri Baru</h2>
-      <p>Tahun Pelajaran 2025/2026 telah dibuka! Segera daftarkan putra Anda menjadi bagian dari keluarga besar Pondok Modern Al-Musyaddad Klaten. Proses pendaftaran mudah dan cepat.</p>
-      <div class="ppdb-buttons">
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfGi00vwYBpLE3AOc83rv38HUFGFZM-XABlSLgmJQjgzfg-RQ/viewform" target="_blank" rel="noopener" class="btn btn-gold">Daftar Online Sekarang</a>
-            <a href="profil/index.html" class="btn btn-outline">Informasi Lengkap</a>
-      </div>
-      <div class="ppdb-stats">
-        <div class="ppdb-stat">
-          <span class="ppdb-stat-number">200+</span>
-          <span class="ppdb-stat-label">Santri Aktif</span>
-        </div>
-        <div class="ppdb-stat">
-          <span class="ppdb-stat-number">30+</span>
-          <span class="ppdb-stat-label">Tenaga Pengajar</span>
-        </div>
-        <div class="ppdb-stat">
-          <span class="ppdb-stat-number">100%</span>
-          <span class="ppdb-stat-label">Lulusan Berakhlak</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Alur Pendaftaran -->
-  <section class="steps" id="alur">
-    <div class="container">
-      <div class="section-title">
-        <h2>Alur Pendaftaran</h2>
-        <p>Cukup 4 langkah mudah untuk mendaftarkan putra Anda</p>
-      </div>
-      <div class="steps-grid">
-        <div class="step-card">
-          <div class="step-number">1</div>
-          <h3>Isi Formulir</h3>
-          <p>Klik tombol "Daftar Sekarang" dan isi data diri calon santri</p>
-        </div>
-        <div class="step-card">
-          <div class="step-number">2</div>
-          <h3>Verifikasi Data</h3>
-          <p>Tim kami akan menghubungi Anda melalui WhatsApp untuk konfirmasi</p>
-        </div>
-        <div class="step-card">
-          <div class="step-number">3</div>
-          <h3>Pembayaran</h3>
-          <p>Lakukan pembayaran melalui transfer ke rekening resmi pondok</p>
-        </div>
-        <div class="step-card">
-          <div class="step-number">4</div>
-          <h3>Selesai</h3>
-          <p>Putra Anda resmi menjadi santri Al-Musyaddad. Selamat bergabung!</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-about">
-          <h3>Pondok Modern Al-Musyaddad</h3>
-          <p>Lembaga pendidikan Islam yang maju, bermutu, dan professional. Mengabdi kepada kepentingan agama dan bangsa dengan mencetak generasi beriman, berilmu, dan berakhlak mulia.</p>
-          <div class="footer-social">
-            <a href="#" aria-label="Facebook">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-            </a>
-            <a href="#" aria-label="YouTube">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.38.55A3.02 3.02 0 0 0 .5 6.19 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.81 3.02 3.02 0 0 0 2.12 2.14c1.88.55 9.38.55 9.38.55s7.5 0 9.38-.55a3.02 3.02 0 0 0 2.12-2.14A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.81zM9.55 15.57V8.43L15.82 12l-6.27 3.57z"/></svg>
-            </a>
-            <a href="#" aria-label="Instagram">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-            </a>
-          </div>
-        </div>
-
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2025 Pondok Modern Al-Musyaddad Klaten. Dengan ❤️ untuk pendidikan.</p>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Floating WA -->
-  <div class="wa-float">
-    <span class="wa-float-tooltip">Butuh bantuan? Chat Admin</span>
-    <a href="https://wa.me/6282324758123" target="_blank" rel="noopener" class="wa-float-btn" aria-label="WhatsApp">
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-    </a>
-  </div>
-
-  <!-- Back to top -->
-  <button class="back-to-top" id="backToTop" aria-label="Back to top">
-    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
-  </button>
-
-  <script src="js/main.js"></script>
-</body>
+    <script>
+      document
+        .getElementById("mobileMenuBtn")
+        .addEventListener("click", function () {
+          document.getElementById("mobileMenu").classList.toggle("hidden");
+        });
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+            }
+          });
+        },
+        { threshold: 0.1 },
+      );
+      document.querySelectorAll("section").forEach((el) => {
+        el.classList.add("scroll-reveal");
+        observer.observe(el);
+      });
+      const track = document.getElementById("galleryTrack");
+      const dotsContainer = document.getElementById("galleryDots");
+      if (track && dotsContainer) {
+        const slides = track.querySelectorAll(".snap-start");
+        slides.forEach((_, i) => {
+          const dot = document.createElement("button");
+          dot.className =
+            "w-3 h-3 rounded-full bg-outline-variant hover:bg-primary transition-all";
+          dot.setAttribute("aria-label", "Slide " + (i + 1));
+          dot.onclick = () =>
+            slides[i].scrollIntoView({
+              behavior: "smooth",
+              inline: "start",
+              block: "nearest",
+            });
+          dotsContainer.appendChild(dot);
+        });
+        const updateDots = () => {
+          const containerRect = track.getBoundingClientRect();
+          dotsContainer.querySelectorAll("button").forEach((dot, i) => {
+            const slide = slides[i];
+            const slideRect = slide.getBoundingClientRect();
+            const mid = slideRect.left + slideRect.width / 2;
+            const containerMid = containerRect.left + containerRect.width / 2;
+            dot.className =
+              "w-3 h-3 rounded-full transition-all " +
+              (Math.abs(mid - containerMid) < slideRect.width / 2
+                ? "bg-primary w-6"
+                : "bg-outline-variant hover:bg-primary");
+          });
+        };
+        track.addEventListener("scroll", updateDots);
+        updateDots();
+      }
+    </script>
+  </body>
 </html>
