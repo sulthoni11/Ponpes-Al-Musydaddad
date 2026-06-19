@@ -22,7 +22,7 @@
     />
     <meta
       property="og:image"
-      content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjPBTH-2P5mO7gqZGYQQDWcJDzjOKE3fnuXZEt12vwsdQHqRwaeDa1rd61Rde4oi8KTBT3x7kphWC-OQYCXxbpsgd03vAHPMZhw7M5Dv_Beibgsq24m6WWfaOiehp6WbdE2V5h08kcjYY-w/s400/Screenshot_20191201-163021_Instagram.jpg"
+      content="DOKUMENTASI PONDOK/FOTO PONDOK .jpg"
     />
     <meta property="og:url" content="https://pondokmodern.sch.id" />
     <meta name="twitter:card" content="summary_large_image" />
@@ -153,6 +153,17 @@
       };
     </script>
     <style>
+      .lightbox { display: none; position: fixed; inset: 0; z-index: 9999; background: rgba(0,0,0,0.9); backdrop-filter: blur(8px); justify-content: center; align-items: center; }
+      .lightbox.open { display: flex; }
+      .lightbox img { max-width: 90vw; max-height: 85vh; object-fit: contain; border-radius: 12px; box-shadow: 0 20px 60px rgba(0,0,0,0.5); }
+      .lightbox .close { position: absolute; top: 20px; right: 30px; color: #fff; font-size: 40px; cursor: pointer; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; border-radius: 50%; background: rgba(255,255,255,0.1); transition: 0.3s; }
+      .lightbox .close:hover { background: rgba(255,255,255,0.2); transform: scale(1.1); }
+      .lightbox .nav { position: absolute; top: 50%; transform: translateY(-50%); color: #fff; font-size: 40px; cursor: pointer; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; border-radius: 50%; background: rgba(255,255,255,0.1); transition: 0.3s; user-select: none; }
+      .lightbox .nav:hover { background: rgba(255,255,255,0.2); transform: translateY(-50%) scale(1.1); }
+      .lightbox .nav.prev { left: 20px; }
+      .lightbox .nav.next { right: 20px; }
+      .lightbox .caption { position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%); color: #fff; font-size: 16px; background: rgba(0,0,0,0.6); padding: 8px 24px; border-radius: 20px; }
+      .gallery-img { cursor: pointer; }
       .material-symbols-outlined {
         font-variation-settings:
           "FILL" 0,
@@ -361,8 +372,8 @@
       >
         <div class="absolute inset-0 z-0">
           <img
-            class="w-full h-full object-cover opacity-60"
-            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjPBTH-2P5mO7gqZGYQQDWcJDzjOKE3fnuXZEt12vwsdQHqRwaeDa1rd61Rde4oi8KTBT3x7kphWC-OQYCXxbpsgd03vAHPMZhw7M5Dv_Beibgsq24m6WWfaOiehp6WbdE2V5h08kcjYY-w/s400/Screenshot_20191201-163021_Instagram.jpg"
+            class="w-full h-full object-cover opacity-90"
+            src="DOKUMENTASI PONDOK/FOTO PONDOK .jpg"
             alt="Pondok Modern Campus"
           />
           <div
@@ -414,15 +425,10 @@
               ></div>
               <img
                 class="rounded-2xl shadow-xl w-full aspect-[4/5] object-cover"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBj-ELF2tlYJswK4qaDkK4YgKI1AMZUU_bt2c6_u1BeRSapc0Ia8PNSSxH4FO9XCw3YNWhFX6fHSq-V23NpykedXZPMtiJD0uO0kPBcb7RAC1oC206YP38kJ_pm5JXtzTfCC67v6fuoXy6lQ1H2JybIq9tQFn3bi8stMTtWHAAg1SRbnkSTGFQmy3TsX0SE8VybmNnqz_nI37qM-OdEljs5LCkfKaOmoRxyvWBkyA3xEcVLD9vspDsoVQxF1tcBiq-r-SRBeH7tt6c"
+                src="DOKUMENTASI PONDOK/FOTO PIMPINAN 1.PNG"
                 alt="Pimpinan Pondok"
               />
-              <div class="absolute bottom-6 right-6 glass-card p-6 rounded-xl">
-                <p class="text-title-lg text-secondary">Samadi, S.Ag., M.SI.</p>
-                <p class="text-label-md text-on-surface-variant">
-                  Pimpinan Pondok Modern Al Musyaddad
-                </p>
-              </div>
+
             </div>
             <div>
               <h2 class="text-headline-md text-primary mb-stack-md">
@@ -606,7 +612,7 @@
           class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-2 gap-gutter"
         >
           <div
-            class="bg-surface-container-low rounded-2xl p-8 border border-outline-variant"
+            class="bg-surface-container-low rounded-2xl p-8 border border-outline-variant "
           >
             <div class="flex items-center gap-4 mb-6">
               <div
@@ -718,9 +724,10 @@
               >
                 <div class="aspect-[4/3] overflow-hidden">
                   <img
-                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 gallery-img"
                     src="downloads/PRAMUKA PUTRA.jpeg"
                     alt="Pramuka"
+                    onclick="openLightbox(this)"
                   />
                 </div>
                 <div class="p-4 bg-surface-container-lowest">
@@ -735,9 +742,10 @@
               >
                 <div class="aspect-[4/3] overflow-hidden">
                   <img
-                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 gallery-img"
                     src="downloads/HADROH.jpeg"
                     alt="Hadroh"
+                    onclick="openLightbox(this)"
                   />
                 </div>
                 <div class="p-4 bg-surface-container-lowest">
@@ -752,9 +760,10 @@
               >
                 <div class="aspect-[4/3] overflow-hidden">
                   <img
-                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 gallery-img"
                     src="downloads/DRUM BAND.jpeg"
                     alt="Drum Band"
+                    onclick="openLightbox(this)"
                   />
                 </div>
                 <div class="p-4 bg-surface-container-lowest">
@@ -770,9 +779,10 @@
               >
                 <div class="aspect-[4/3] overflow-hidden">
                   <img
-                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 gallery-img"
                     src="downloads/SEPAK BOLA.jpeg"
                     alt="Sepak Bola"
+                    onclick="openLightbox(this)"
                   />
                 </div>
                 <div class="p-4 bg-surface-container-lowest">
@@ -788,9 +798,10 @@
               >
                 <div class="aspect-[4/3] overflow-hidden">
                   <img
-                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 gallery-img"
                     src="downloads/KOMPUTER.jpeg"
                     alt="Lab Komputer"
+                    onclick="openLightbox(this)"
                   />
                 </div>
                 <div class="p-4 bg-surface-container-lowest">
@@ -973,6 +984,14 @@
       </a>
     </div>
 
+    <div class="lightbox" id="lightbox">
+      <span class="close material-symbols-outlined" onclick="closeLightbox()">close</span>
+      <span class="nav prev material-symbols-outlined" onclick="navigateLightbox(-1)">chevron_left</span>
+      <span class="nav next material-symbols-outlined" onclick="navigateLightbox(1)">chevron_right</span>
+      <img id="lightboxImg" src="" alt=""/>
+      <div class="caption" id="lightboxCaption"></div>
+    </div>
+
     <script>
       document
         .getElementById("mobileMenuBtn")
@@ -1027,6 +1046,37 @@
         track.addEventListener("scroll", updateDots);
         updateDots();
       }
+      let currentIndex = 0;
+      const galleryImages = Array.from(document.querySelectorAll('.gallery-img'));
+      function openLightbox(img) {
+        const lightbox = document.getElementById('lightbox');
+        document.getElementById('lightboxImg').src = img.src;
+        document.getElementById('lightboxCaption').textContent = img.alt;
+        currentIndex = galleryImages.indexOf(img);
+        lightbox.classList.add('open');
+        document.body.style.overflow = 'hidden';
+      }
+      function closeLightbox() {
+        document.getElementById('lightbox').classList.remove('open');
+        document.body.style.overflow = '';
+      }
+      function navigateLightbox(dir) {
+        currentIndex += dir;
+        if (currentIndex < 0) currentIndex = galleryImages.length - 1;
+        if (currentIndex >= galleryImages.length) currentIndex = 0;
+        const img = galleryImages[currentIndex];
+        document.getElementById('lightboxImg').src = img.src;
+        document.getElementById('lightboxCaption').textContent = img.alt;
+      }
+      document.getElementById('lightbox').addEventListener('click', function(e) {
+        if (e.target === this) closeLightbox();
+      });
+      document.addEventListener('keydown', function(e) {
+        if (!document.getElementById('lightbox').classList.contains('open')) return;
+        if (e.key === 'Escape') closeLightbox();
+        if (e.key === 'ArrowLeft') navigateLightbox(-1);
+        if (e.key === 'ArrowRight') navigateLightbox(1);
+      });
     </script>
   </body>
 </html>
