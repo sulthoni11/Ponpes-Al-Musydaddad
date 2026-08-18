@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pondokmodern.sch.id/sitemap.xml
