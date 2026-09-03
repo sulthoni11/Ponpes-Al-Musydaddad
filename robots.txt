@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://pondokmodern.sch.id/sitemap.xml
+Sitemap: https://pondokmodernalmusyaddad.com/sitemap.xml
