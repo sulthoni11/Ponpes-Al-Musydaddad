@@ -42,14 +42,57 @@
           "url": "https://www.pondokmodernalmusyaddad.com/",
           "name": "Pondok Modern Al Musyaddad",
           "description": "Lembaga pendidikan Islam modern di Klaten dengan kurikulum SPM (Satuan Pendidikan Muadalah).",
-          "inLanguage": "id"
+          "inLanguage": "id",
+          "publisher": { "@id": "https://www.pondokmodernalmusyaddad.com/#organization" }
         },
         {
-          "@type": "School",
+          "@type": "EducationalOrganization",
           "@id": "https://www.pondokmodernalmusyaddad.com/#organization",
           "name": "Pondok Modern Al Musyaddad",
+          "alternateName": "Pondok Pesantren Al Musyaddad",
           "url": "https://www.pondokmodernalmusyaddad.com/",
-          "logo": { "@type": "ImageObject", "url": "https://www.pondokmodernalmusyaddad.com/logo.png" }
+          "logo": { "@type": "ImageObject", "url": "https://www.pondokmodernalmusyaddad.com/logo.png" },
+          "image": { "@type": "ImageObject", "url": "https://www.pondokmodernalmusyaddad.com/DOKUMENTASI%20PONDOK/FOTO%20PONDOK%20.jpg" },
+          "description": "Pesantren modern di Klaten dengan kurikulum SPM (Satuan Pendidikan Muadalah) terintegrasi: SPM Wustha (setingkat SMP) dan SPM Ulya (setingkat SMA).",
+          "foundingDate": "2018-09-23",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Tlobong RT.04/09, Sidoharjo",
+            "addressLocality": "Polanharjo",
+            "addressRegion": "Klaten, Jawa Tengah",
+            "postalCode": "57474",
+            "addressCountry": "ID"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "-7.7277",
+            "longitude": "110.6530"
+          },
+          "telephone": "+62-858-7642-7449",
+          "email": "info@pondokmodern.sch.id",
+          "sameAs": [],
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Program Pendidikan",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "EducationalOccupationalProgram",
+                  "name": "SPM Wustha",
+                  "description": "Satuan Pendidikan Muadalah setingkat SMP"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "EducationalOccupationalProgram",
+                  "name": "SPM Ulya",
+                  "description": "Satuan Pendidikan Muadalah setingkat SMA"
+                }
+              }
+            ]
+          }
         },
         {
           "@type": "WebPage",
@@ -58,7 +101,15 @@
           "name": "Pondok Modern Al Musyaddad - Beranda",
           "inLanguage": "id",
           "isPartOf": { "@id": "https://www.pondokmodernalmusyaddad.com/#website" },
-          "about": { "@id": "https://www.pondokmodernalmusyaddad.com/#organization" }
+          "about": { "@id": "https://www.pondokmodernalmusyaddad.com/#organization" },
+          "breadcrumb": { "@id": "https://www.pondokmodernalmusyaddad.com/#breadcrumb" }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://www.pondokmodernalmusyaddad.com/#breadcrumb",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Beranda", "item": "https://www.pondokmodernalmusyaddad.com/" }
+          ]
         }
       ]
     }
